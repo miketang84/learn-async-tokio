@@ -9,7 +9,7 @@ edition = "2018"
 [dependencies]
 tokio = {git="https://github.com/tokio-rs/tokio"}
 #futures = {git="https://github.com/rust-lang-nursery/futures-rs"}
-futures-preview = "=0.3.0-alpha.18"
+futures-preview = {version="0.3.0-alpha.18", features=["async-await", "nightly"] }
 
 [[bin]]
 name = "interval"
@@ -18,3 +18,7 @@ path = "src/interval.rs"
 [[bin]]
 name = "two_intervals"
 path = "src/two_intervals.rs"
+
+[[bin]]
+name = "two_intervals_2"
+path = "src/two_intervals_2.rs"
